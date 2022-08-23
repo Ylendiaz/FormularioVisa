@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Formulario Visa</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+<body>
+
+<div class="Border">
+    <div class="form-container">
+
+        <form class="form" action="Recibe.aspx" method="post">
+            <h1>Formulario</h1>
+            <h2>Informaciones Generales</h2>
+
+            <div class="field">
+                <p>Nombre: <input id="Fname" type="text" name="first-name" placeholder="ej: Ylen "></p>
+            </div>
+
+            <div class="field">
+                <p>Apellido: <input id="Lname" type="text" name="last-name" placeholder="ej: Díaz Polanco"></p>
+            </div>
+
+            <div class="field">
+                <p>Sexo: </p>
+                <input id="sexM" type="radio" name="sex" value="M" />
+                <label for="M">M</label>
+                <input id="sexF" type="radio" name="sex" value="F">
+                <label for="F">F</label>
+            </div>
+
+            <div class="field">
+                <p>Fecha de nacimiento: <input id="DB" type="date" name="birth-date"></p>
+            </div>
+
+            <div class="field">
+                <p>Dirección: <input id="address" type="text" name="user-address" placeholder="ej: Calle Juan Isidro Ortega #33, Los Prados"></p>
+            </div>
+
+            <h2>Información de Ingresos</h2>
+
+            <div class="field">
+                <p>Sueldo: <input id="salary" type="text" name="user-salary" placeholder="ej:  50,000"></p>
+            </div>
+
+            <div class="field">
+                <p>Empleador: <input id="employer" type="text" name="user-employer" placeholder="ej: Claro RD"></p>
+            </div>
+
+            <div class="field">
+                <p>Fecha de ingreso: <input id="AD" type="date" name="admission-date"></p>
+            </div>
+
+            <h2>Dependientes</h2>
+
+            <div class="field">
+                <p>Cantidad de hijos: <input id="NoChild" type="text" name="number-children" placeholder="ej. 1"></p>
+            </div>
+
+            <div class="field">
+                <p>Cantidad de padres: <input id="NoAdult" type="text" name="number-parents" placeholder="ej. 2"></p>
+            </div>
+
+            <button type="submit" value="submit">Submit</button>
+
+        </form>
+
+    </div>
+</div>
+
+</body>
+
+</html>
